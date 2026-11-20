@@ -12,7 +12,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HoloCortex.AI — The Specialists Your Agents Call</title>
+    <title>HoloCortex.AI — The Specialist Your Agent Calls</title>
     <meta name="description" content="HoloCortex.AI is Europe's first B2A (Business-to-Agent) powerhouse. Leading Europe into the agentic economy by building the specialists that agents call, and the trust layer that humans demand.">
     <meta name="keywords" content="HoloCortex, B2A, Business to Agent, Agentic Economy, Sovereign AI Europe, HOLO, CORTEX, Enterprise AI">
     <meta name="robots" content="index, follow">
@@ -21,7 +21,7 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://holocortex.ai/">
-    <meta property="og:title" content="HoloCortex.AI — The Specialists Your Agents Call">
+    <meta property="og:title" content="HoloCortex.AI — The Specialist Your Agent Calls">
     <meta property="og:description" content="Powering the Agentic Economy. Protecting the Enterprise. Currently researching and cooking in stealth mode.">
     <meta property="og:image" content="https://holocortex.ai/og-image.jpg">
     <meta property="og:site_name" content="HoloCortex.AI">
@@ -29,7 +29,7 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://holocortex.ai/">
-    <meta property="twitter:title" content="HoloCortex.AI — The Specialists Your Agents Call">
+    <meta property="twitter:title" content="HoloCortex.AI — The Specialist Your Agent Calls">
     <meta property="twitter:description" content="Powering the Agentic Economy. Protecting the Enterprise. Currently researching and cooking in stealth mode.">
     <meta property="twitter:image" content="https://holocortex.ai/twitter-image.jpg">
 
@@ -51,7 +51,7 @@
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "HoloCortex.AI",
-        "slogan": "The Specialists Your Agents Call.",
+        "slogan": "The Specialist Your Agent Calls.",
         "description": "Leading Europe into the agentic economy by building the specialists that agents call, and the trust layer that humans demand.",
         "url": "https://holocortex.ai",
         "address": {
@@ -308,6 +308,7 @@
             font-size: clamp(1.15rem, 1rem + 0.6vw, 1.4rem);
             font-weight: 700;
             color: #2d3748;
+            line-height: 1.45;
             margin-block-end: 0.85rem;
             animation: fadeInUp 1s ease-out 0.15s both;
         }
@@ -463,6 +464,7 @@
             color: #718096;
             max-inline-size: 60ch;
             margin-inline: auto;
+            text-wrap: balance;
         }
 
         .features {
@@ -540,6 +542,232 @@
             font-size: 0.88rem;
             font-weight: 600;
             color: #ff6600;
+        }
+
+        .visually-hidden:where(:not(:focus-within, :active)) {
+            position: absolute !important;
+            clip-path: inset(50%) !important;
+            overflow: hidden !important;
+            width: 1px !important;
+            height: 1px !important;
+            margin: -1px !important;
+            padding: 0 !important;
+            border: 0 !important;
+            white-space: nowrap !important;
+        }
+
+        /* Cortex Preview Models (Smith-Pincette) */
+        .cortex-models-card {
+            grid-column: 1 / -1;
+            container-type: inline-size;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 138, 0, 0.04) 100%);
+            border-color: rgba(255, 138, 0, 0.24);
+            gap: 1rem;
+        }
+
+        .cortex-models-card:hover {
+            transform: none;
+            box-shadow: 0 16px 44px rgba(255, 138, 0, 0.12);
+        }
+
+        .models-header {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .models-header-top {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+        }
+
+        .models-badges {
+            display: inline-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.65rem;
+        }
+
+        .models-eyebrow {
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #c2410c;
+        }
+
+        .models-meta-pill {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.3rem 0.75rem;
+            border-radius: 999px;
+            background: rgba(255, 138, 0, 0.08);
+            border: 1px solid rgba(255, 138, 0, 0.22);
+            color: #4a5568;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+
+        .models-description {
+            max-inline-size: 72ch;
+        }
+
+        .model-links {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.85rem;
+            margin-block-start: 0.35rem;
+        }
+
+        .model-links > li {
+            display: flex;
+        }
+
+        .model-link-card {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            inline-size: 100%;
+            min-block-size: 44px;
+            padding: 1rem 1.15rem;
+            border-radius: 14px;
+            background: #ffffff;
+            border: 1px solid rgba(255, 138, 0, 0.2);
+            text-decoration: none;
+            color: #2d3748;
+            box-shadow: 0 2px 10px rgba(45, 55, 72, 0.03);
+            transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .model-link-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(255, 102, 0, 0.5);
+            box-shadow: 0 10px 24px rgba(255, 138, 0, 0.14);
+        }
+
+        .model-link-card:focus-visible {
+            outline: 3px solid #c2410c;
+            outline-offset: 3px;
+            border-color: rgba(255, 102, 0, 0.55);
+        }
+
+        .model-link-top {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem;
+        }
+
+        .model-platform {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #c2410c;
+        }
+
+        .platform-icon {
+            flex-shrink: 0;
+        }
+
+        .model-link-arrow {
+            color: #718096;
+            flex-shrink: 0;
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+
+        .model-link-card:hover .model-link-arrow,
+        .model-link-card:focus-visible .model-link-arrow {
+            color: #c2410c;
+            transform: translate(2px, -2px);
+        }
+
+        .model-link-name {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #2d3748;
+            line-height: 1.3;
+        }
+
+        .model-link-meta {
+            font-size: 0.875rem;
+            color: #4a5568;
+            line-height: 1.45;
+        }
+
+        .model-link-top-end {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            flex-shrink: 0;
+            margin-inline-start: auto;
+        }
+
+        .quickstart-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.2rem 0.55rem;
+            border-radius: 999px;
+            background: linear-gradient(135deg, #c2410c, #b4360a);
+            color: #ffffff;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+
+        .model-link-card--quickstart {
+            background: linear-gradient(135deg, #fffaf5 0%, rgba(255, 138, 0, 0.1) 100%);
+            border-color: rgba(255, 102, 0, 0.45);
+            box-shadow: 0 4px 16px rgba(255, 138, 0, 0.12);
+        }
+
+        .model-link-card--quickstart:hover {
+            border-color: rgba(255, 87, 34, 0.7);
+            box-shadow: 0 12px 28px rgba(255, 138, 0, 0.2);
+        }
+
+        .model-link-card--quickstart .model-link-arrow {
+            color: #c2410c;
+        }
+
+        @container (min-width: 500px) and (max-width: 719.98px) {
+            .model-links {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .model-links > li:last-child {
+                grid-column: 1 / -1;
+            }
+        }
+
+        @container (min-width: 720px) {
+            .model-links {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .model-link-card,
+            .model-link-arrow {
+                transition: none;
+            }
+
+            .model-link-card:hover,
+            .model-link-card:hover .model-link-arrow,
+            .model-link-card:focus-visible .model-link-arrow {
+                transform: none;
+            }
         }
 
         /* Vision & Stealth Callout */
@@ -712,10 +940,11 @@
                     <div class="hero-text">
                         <span class="eyebrow">Europe&rsquo;s First B2A (Business-to-Agent) Powerhouse</span>
                         <h1 class="slogan">
-                            The Specialists Your <span class="highlight">Agents Call.</span>
+                            The Specialist Your <span class="highlight">Agent Calls.</span>
                         </h1>
                         <p class="hero-lead">
-                            Powering the Agentic Economy. Protecting the Enterprise.
+                            Powering the Agentic Economy.<br>
+                            Protecting the Enterprise.
                         </p>
                         <p class="subtitle">
                             Leading Europe into the agentic economy by building the specialists that agents call, and the trust layer that humans demand.
@@ -792,6 +1021,88 @@
                             The sovereign trust and routing layer that connects agents to your deepest proprietary knowledge in the cloud without ever compromising sovereignty or security.
                         </p>
                         <div class="sidenote-tag">Stop Paying Frontier Prices for Commodity Tasks.</div>
+                    </article>
+
+                    <article class="feature-card cortex-models-card" id="smith-pincette" aria-labelledby="smith-pincette-heading">
+                        <header class="models-header">
+                            <div class="models-header-top">
+                                <div class="models-badges">
+                                    <span class="engine-badge">CORTEX</span>
+                                    <span class="models-eyebrow">Preview Models</span>
+                                </div>
+                                <span class="models-meta-pill">Open Preview &middot; Local ONNX &middot; Apache-2.0</span>
+                            </div>
+                            <h3 id="smith-pincette-heading" class="feature-title">Smith-Pincette</h3>
+                        </header>
+                        <p class="feature-description models-description">
+                            Named after precision tweezers (<em>Pincette</em>), our first open-weight Cortex models pull valuable and sensitive information out of text with exact span precision&mdash;running fully locally via ONNX so agents can detect and mask personal data before anything leaves your environment.
+                        </p>
+                        <ul class="model-links" role="list">
+                            <li>
+                                <a class="model-link-card" href="https://huggingface.co/Holocortex/Smith-Pincette-Nitro" target="_blank" rel="noopener noreferrer">
+                                    <span class="model-link-top">
+                                        <span class="model-platform">
+                                            <svg class="platform-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                                <polyline points="3.29 7 12 12 20.71 7" />
+                                                <line x1="12" y1="22" x2="12" y2="12" />
+                                            </svg>
+                                            Hugging Face
+                                        </span>
+                                        <svg class="model-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M7 17L17 7" />
+                                            <path d="M7 7h10v10" />
+                                        </svg>
+                                    </span>
+                                    <span class="model-link-name">Smith-Pincette-Nitro</span>
+                                    <span class="model-link-meta">146.7M &middot; Fast tier built for CPU &amp; high-volume text</span>
+                                    <span class="visually-hidden"> (opens in a new tab)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="model-link-card" href="https://huggingface.co/Holocortex/Smith-Pincette-Sprint" target="_blank" rel="noopener noreferrer">
+                                    <span class="model-link-top">
+                                        <span class="model-platform">
+                                            <svg class="platform-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                                <polyline points="3.29 7 12 12 20.71 7" />
+                                                <line x1="12" y1="22" x2="12" y2="12" />
+                                            </svg>
+                                            Hugging Face
+                                        </span>
+                                        <svg class="model-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M7 17L17 7" />
+                                            <path d="M7 7h10v10" />
+                                        </svg>
+                                    </span>
+                                    <span class="model-link-name">Smith-Pincette-Sprint</span>
+                                    <span class="model-link-meta">321.9M &middot; Wider multilingual encoder across 43 classes</span>
+                                    <span class="visually-hidden"> (opens in a new tab)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="model-link-card model-link-card--quickstart" href="https://github.com/holocortex/Smith-Pincette-Models" target="_blank" rel="noopener noreferrer">
+                                    <span class="model-link-top">
+                                        <span class="model-platform">
+                                            <svg class="platform-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                                            </svg>
+                                            GitHub
+                                        </span>
+                                        <span class="model-link-top-end">
+                                            <span class="quickstart-badge">Quickstart</span>
+                                            <svg class="model-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                                <path d="M7 17L17 7" />
+                                                <path d="M7 7h10v10" />
+                                            </svg>
+                                        </span>
+                                    </span>
+                                    <span class="model-link-name">Smith-Pincette-Models</span>
+                                    <span class="model-link-meta">Start here &middot; Python SDK, CLI masking &amp; local MCP server</span>
+                                    <span class="visually-hidden"> (opens in a new tab)</span>
+                                </a>
+                            </li>
+                        </ul>
                     </article>
                 </div>
             </section>

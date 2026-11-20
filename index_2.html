@@ -1,0 +1,1953 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9HQEJ66GZC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-9HQEJ66GZC');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoloCortex.AI — The Specialist Your Agent Calls</title>
+    <meta name="description" content="HoloCortex.AI is Europe's first B2A (Business-to-Agent) powerhouse. Leading Europe into the agentic economy by building the specialists that agents call, and the trust layer that humans demand.">
+    <meta name="keywords" content="HoloCortex, B2A, Business to Agent, Agentic Economy, Sovereign AI Europe, HOLO, CORTEX, Enterprise AI">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="HoloCortex.AI">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://holocortex.ai/">
+    <meta property="og:title" content="HoloCortex.AI — The Specialist Your Agent Calls">
+    <meta property="og:description" content="Powering the Agentic Economy. Protecting the Enterprise. Currently researching and cooking in stealth mode.">
+    <meta property="og:image" content="https://holocortex.ai/og-image.jpg">
+    <meta property="og:site_name" content="HoloCortex.AI">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://holocortex.ai/">
+    <meta property="twitter:title" content="HoloCortex.AI — The Specialist Your Agent Calls">
+    <meta property="twitter:description" content="Powering the Agentic Economy. Protecting the Enterprise. Currently researching and cooking in stealth mode.">
+    <meta property="twitter:image" content="https://holocortex.ai/twitter-image.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://holocortex.ai/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Typography: Plus Jakarta Sans + Inter + JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "HoloCortex.AI",
+        "slogan": "The Specialist Your Agent Calls.",
+        "description": "Leading Europe into the agentic economy by building the specialists that agents call, and the trust layer that humans demand.",
+        "url": "https://holocortex.ai",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Berlin",
+            "addressCountry": "Germany"
+        }
+    }
+    </script>
+
+    <style>
+        :root {
+            color-scheme: light;
+            --bg-canvas: #fcfbf9;
+            --bg-surface: #ffffff;
+            --bg-subtle: #f7f4ef;
+            --bg-warm: #fff8f1;
+            --bg-warm-strong: #ffedd5;
+            --ink-primary: #0f172a;
+            --ink-secondary: #475569;
+            --ink-muted: #526071;
+            --accent-ember: #ff5722;
+            --accent-amber: #ff9800;
+            --accent-text: #c2410c;
+            --accent-text-strong: #9a3412;
+            --accent-fill-start: #c2410c;
+            --accent-fill-end: #b4360a;
+            --border-hairline: rgba(15, 23, 42, 0.09);
+            --border-strong: rgba(15, 23, 42, 0.16);
+            --border-warm: rgba(234, 88, 12, 0.28);
+            --border-warm-strong: rgba(234, 88, 12, 0.48);
+            --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.04);
+            --shadow-sm: 0 4px 16px rgba(15, 23, 42, 0.04), 0 1px 3px rgba(15, 23, 42, 0.03);
+            --shadow-md: 0 14px 36px rgba(15, 23, 42, 0.06), 0 2px 8px rgba(234, 88, 12, 0.06);
+            --shadow-warm: 0 14px 36px rgba(234, 88, 12, 0.14);
+            --radius-sm: 10px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --font-display: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+            --focus-ring: 3px solid #c2410c;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scrollbar-gutter: stable;
+        }
+
+        @media (prefers-reduced-motion: no-preference) {
+            html {
+                scroll-behavior: smooth;
+            }
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-canvas);
+            background-image:
+                radial-gradient(65% 42% at 88% 0%, rgba(255, 152, 0, 0.14) 0%, rgba(255, 87, 34, 0.04) 45%, transparent 75%),
+                radial-gradient(45% 32% at 8% 12%, rgba(255, 138, 0, 0.08) 0%, transparent 70%);
+            background-repeat: no-repeat;
+            color: var(--ink-primary);
+            min-block-size: 100dvh;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: clip;
+        }
+
+        svg {
+            display: block;
+        }
+
+        img,
+        picture {
+            display: block;
+            max-inline-size: 100%;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        :where(a:any-link, button, [tabindex="-1"]):focus-visible {
+            outline: var(--focus-ring);
+            outline-offset: 3px;
+        }
+
+        .visually-hidden:where(:not(:focus-within, :active)) {
+            position: absolute !important;
+            clip-path: inset(50%) !important;
+            overflow: hidden !important;
+            width: 1px !important;
+            height: 1px !important;
+            margin: -1px !important;
+            padding: 0 !important;
+            border: 0 !important;
+            white-space: nowrap !important;
+        }
+
+        .container {
+            inline-size: 100%;
+            max-inline-size: 1140px;
+            margin-inline: auto;
+            padding-inline: clamp(1rem, 3.5vw, 2.5rem);
+        }
+
+        /* Subtle Architectural Hero Backdrop */
+        .hero-backdrop {
+            position: relative;
+        }
+
+        .hero-backdrop::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            pointer-events: none;
+            background-image: radial-gradient(rgba(15, 23, 42, 0.085) 1px, transparent 1px);
+            background-size: 24px 24px;
+            mask-image: radial-gradient(ellipse 78% 72% at 50% 35%, #000 15%, transparent 80%);
+            -webkit-mask-image: radial-gradient(ellipse 78% 72% at 50% 35%, #000 15%, transparent 80%);
+        }
+
+        /* Sticky Bright Glass Header */
+        .site-header {
+            position: sticky;
+            inset-block-start: 0;
+            z-index: 50;
+            background: rgba(252, 251, 249, 0.86);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-block-end: 1px solid var(--border-hairline);
+        }
+
+        .header-inner {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: safe center;
+            justify-content: space-between;
+            gap: 0.65rem 1.25rem;
+            padding-block: 0.65rem;
+        }
+
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+            min-block-size: 44px;
+            text-decoration: none;
+            font-family: var(--font-display);
+            font-size: clamp(1.15rem, 1rem + 0.55vw, 1.45rem);
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            flex-shrink: 0;
+        }
+
+        .logo-svg {
+            inline-size: 36px;
+            block-size: 36px;
+            flex-shrink: 0;
+        }
+
+        .logo-text {
+            background: linear-gradient(135deg, var(--accent-ember), var(--accent-amber));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Main Vertical Rhythm */
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: clamp(3rem, 6vw, 5.25rem);
+            padding-block-end: clamp(3rem, 6vw, 5rem);
+        }
+
+        section[id],
+        article[id] {
+            scroll-margin-block-start: 5.5rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding-block-start: clamp(2rem, 5vw, 4.25rem);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+            align-items: center;
+            gap: clamp(2rem, 4.5vw, 3.75rem);
+        }
+
+        .hero-copy {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.15rem;
+        }
+
+        .eyebrow {
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--accent-text);
+        }
+
+        .stealth-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.42rem 0.9rem;
+            border-radius: 999px;
+            background: var(--bg-warm);
+            border: 1px solid var(--border-warm);
+            color: var(--accent-text-strong);
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        }
+
+        .stealth-dot {
+            inline-size: 8px;
+            block-size: 8px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-ember), var(--accent-amber));
+            flex-shrink: 0;
+        }
+
+        @media (prefers-reduced-motion: no-preference) {
+            .stealth-dot {
+                box-shadow: 0 0 0 0 rgba(255, 87, 34, 0.5);
+                animation: pulseDot 2s infinite;
+            }
+        }
+
+        @keyframes pulseDot {
+            0% { box-shadow: 0 0 0 0 rgba(255, 87, 34, 0.5); }
+            70% { box-shadow: 0 0 0 8px rgba(255, 87, 34, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 87, 34, 0); }
+        }
+
+        .hero-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.25rem, 1.5rem + 3vw, 4rem);
+            font-weight: 800;
+            line-height: 1.08;
+            letter-spacing: -0.035em;
+            color: var(--ink-primary);
+            text-wrap: balance;
+        }
+
+        .slogan-accent {
+            background: linear-gradient(135deg, #ea580c 0%, #ff5722 45%, #ff9800 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: inline-block;
+            position: relative;
+        }
+
+        .slogan-accent::after {
+            content: '';
+            position: absolute;
+            inset-inline: 0;
+            inset-block-end: -3px;
+            block-size: 4px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, var(--accent-ember), var(--accent-amber));
+            opacity: 0.6;
+        }
+
+        .hero-lead {
+            font-family: var(--font-display);
+            font-size: clamp(1.125rem, 1rem + 0.55vw, 1.375rem);
+            font-weight: 700;
+            line-height: 1.42;
+            color: var(--ink-primary);
+            letter-spacing: -0.015em;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1rem, 0.96rem + 0.22vw, 1.125rem);
+            line-height: 1.68;
+            color: var(--ink-secondary);
+            max-inline-size: 54ch;
+            text-wrap: pretty;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.75rem;
+            margin-block-start: 0.35rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            min-block-size: 46px;
+            padding: 0.72rem 1.35rem;
+            border-radius: 999px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+        }
+
+        .btn-primary {
+            border: 1px solid transparent;
+            background: linear-gradient(135deg, var(--accent-fill-start), var(--accent-fill-end));
+            color: #ffffff;
+            box-shadow: 0 8px 22px rgba(194, 65, 12, 0.24);
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 12px 28px rgba(194, 65, 12, 0.32);
+        }
+
+        .btn-secondary {
+            border: 1px solid var(--border-strong);
+            background: var(--bg-surface);
+            color: var(--ink-primary);
+            box-shadow: var(--shadow-xs);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--border-warm-strong);
+            background: var(--bg-warm);
+            box-shadow: var(--shadow-sm);
+        }
+
+        @media (prefers-reduced-motion: no-preference) {
+            .btn:hover {
+                transform: translateY(-1px);
+            }
+        }
+
+        /* Hero Architectural B2A Showcase Card */
+        .b2a-card {
+            background: linear-gradient(180deg, #ffffff 0%, #fffaf4 100%);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-lg);
+            padding: clamp(1.25rem, 2.5vw, 1.75rem);
+            box-shadow: var(--shadow-md);
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            position: relative;
+        }
+
+        .b2a-card-top {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem;
+            padding-block-end: 0.85rem;
+            border-block-end: 1px solid var(--border-hairline);
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--ink-muted);
+        }
+
+        .b2a-status-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            color: var(--accent-text);
+        }
+
+        .emblem-stage {
+            position: relative;
+            display: grid;
+            place-items: center;
+            padding-block: 1.1rem;
+            border-radius: var(--radius-md);
+            background:
+                radial-gradient(circle at center, rgba(255, 152, 0, 0.14) 0%, rgba(255, 87, 34, 0.04) 48%, transparent 72%),
+                var(--bg-surface);
+            border: 1px solid rgba(234, 88, 12, 0.14);
+        }
+
+        .emblem-ring {
+            position: relative;
+            display: grid;
+            place-items: center;
+            inline-size: clamp(136px, 18vw, 168px);
+            block-size: clamp(136px, 18vw, 168px);
+            border-radius: 50%;
+            border: 1px dashed rgba(234, 88, 12, 0.28);
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.96) 55%, rgba(255, 248, 241, 0.7) 100%);
+        }
+
+        .hero-logo-spin {
+            display: grid;
+            place-items: center;
+            transform-origin: center;
+        }
+
+        .hero-logo {
+            inline-size: clamp(108px, 14vw, 134px);
+            block-size: clamp(108px, 14vw, 134px);
+            transform-origin: center;
+        }
+
+        @keyframes rotateSvg {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes pulsateCenter {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.8; }
+        }
+
+        @keyframes pulsateParticle {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.1); opacity: 0.6; }
+        }
+
+        @keyframes fadeLine {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.7; }
+        }
+
+        @keyframes heroLogoAnimation {
+            0% { opacity: 0; transform: scale(0.5) rotate(-30deg); }
+            50% { opacity: 1; transform: scale(1.1) rotate(10deg); }
+            100% { opacity: 1; transform: scale(1) rotate(0deg); }
+        }
+
+        @keyframes particleAppear {
+            0% { opacity: 0; transform: scale(0); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes lineDraw {
+            0% { stroke-dasharray: 100; stroke-dashoffset: 100; opacity: 0; }
+            100% { stroke-dashoffset: 0; opacity: 1; }
+        }
+
+        @media (prefers-reduced-motion: no-preference) {
+            .logo-svg,
+            .divider-mark {
+                transform-origin: center;
+                animation: rotateSvg 20s linear infinite;
+            }
+
+            .logo-svg circle:nth-of-type(1),
+            .divider-mark circle:nth-of-type(1) {
+                animation: pulsateCenter 2s infinite ease-in-out;
+                transform-origin: center;
+            }
+
+            .logo-svg circle:not(:nth-of-type(1)),
+            .divider-mark circle:not(:nth-of-type(1)) {
+                animation: pulsateParticle 2.5s infinite ease-in-out;
+                transform-origin: center;
+            }
+
+            .logo-svg circle:nth-of-type(2), .divider-mark circle:nth-of-type(2) { animation-delay: 0.1s; }
+            .logo-svg circle:nth-of-type(3), .divider-mark circle:nth-of-type(3) { animation-delay: 0.2s; }
+            .logo-svg circle:nth-of-type(4), .divider-mark circle:nth-of-type(4) { animation-delay: 0.3s; }
+            .logo-svg circle:nth-of-type(5), .divider-mark circle:nth-of-type(5) { animation-delay: 0.4s; }
+            .logo-svg circle:nth-of-type(6), .divider-mark circle:nth-of-type(6) { animation-delay: 0.5s; }
+            .logo-svg circle:nth-of-type(7), .divider-mark circle:nth-of-type(7) { animation-delay: 0.6s; }
+            .logo-svg circle:nth-of-type(8), .divider-mark circle:nth-of-type(8) { animation-delay: 0.7s; }
+            .logo-svg circle:nth-of-type(9), .divider-mark circle:nth-of-type(9) { animation-delay: 0.8s; }
+            .logo-svg circle:nth-of-type(10), .divider-mark circle:nth-of-type(10) { animation-delay: 0.9s; }
+            .logo-svg circle:nth-of-type(11), .divider-mark circle:nth-of-type(11) { animation-delay: 1.0s; }
+            .logo-svg circle:nth-of-type(12), .divider-mark circle:nth-of-type(12) { animation-delay: 1.1s; }
+            .logo-svg circle:nth-of-type(13), .divider-mark circle:nth-of-type(13) { animation-delay: 1.2s; }
+
+            .logo-svg line,
+            .divider-mark line {
+                animation: fadeLine 3s infinite ease-in-out;
+            }
+
+            .logo-svg line:nth-of-type(1), .divider-mark line:nth-of-type(1) { animation-delay: 0s; }
+            .logo-svg line:nth-of-type(2), .divider-mark line:nth-of-type(2) { animation-delay: 0.3s; }
+            .logo-svg line:nth-of-type(3), .divider-mark line:nth-of-type(3) { animation-delay: 0.6s; }
+            .logo-svg line:nth-of-type(4), .divider-mark line:nth-of-type(4) { animation-delay: 0.9s; }
+            .logo-svg line:nth-of-type(5), .divider-mark line:nth-of-type(5) { animation-delay: 1.2s; }
+            .logo-svg line:nth-of-type(6), .divider-mark line:nth-of-type(6) { animation-delay: 1.5s; }
+            .logo-svg line:nth-of-type(7), .divider-mark line:nth-of-type(7) { animation-delay: 1.8s; }
+            .logo-svg line:nth-of-type(8), .divider-mark line:nth-of-type(8) { animation-delay: 2.1s; }
+
+            .hero-logo-spin {
+                animation: rotateSvg 24s linear 2s infinite;
+            }
+
+            .hero-logo {
+                animation: heroLogoAnimation 2s ease-out both;
+            }
+
+            .hero-logo circle {
+                opacity: 0;
+                transform-origin: center;
+                animation: particleAppear 0.8s ease-out forwards;
+            }
+
+            .hero-logo circle:nth-of-type(1) { animation-delay: 0.3s; }
+            .hero-logo circle:nth-of-type(2) { animation-delay: 0.4s; }
+            .hero-logo circle:nth-of-type(3) { animation-delay: 0.5s; }
+            .hero-logo circle:nth-of-type(4) { animation-delay: 0.6s; }
+            .hero-logo circle:nth-of-type(5) { animation-delay: 0.7s; }
+            .hero-logo circle:nth-of-type(6) { animation-delay: 0.8s; }
+            .hero-logo circle:nth-of-type(7) { animation-delay: 0.9s; }
+            .hero-logo circle:nth-of-type(8) { animation-delay: 1.0s; }
+            .hero-logo circle:nth-of-type(9) { animation-delay: 1.1s; }
+            .hero-logo circle:nth-of-type(10) { animation-delay: 1.2s; }
+            .hero-logo circle:nth-of-type(11) { animation-delay: 1.3s; }
+            .hero-logo circle:nth-of-type(12) { animation-delay: 1.4s; }
+            .hero-logo circle:nth-of-type(13) { animation-delay: 1.5s; }
+
+            .hero-logo line {
+                opacity: 0;
+                stroke-dasharray: 100;
+                stroke-dashoffset: 100;
+                animation: lineDraw 1s ease-out forwards;
+            }
+
+            .hero-logo line:nth-of-type(1) { animation-delay: 1.3s; }
+            .hero-logo line:nth-of-type(2) { animation-delay: 1.4s; }
+            .hero-logo line:nth-of-type(3) { animation-delay: 1.5s; }
+            .hero-logo line:nth-of-type(4) { animation-delay: 1.6s; }
+            .hero-logo line:nth-of-type(5) { animation-delay: 1.7s; }
+            .hero-logo line:nth-of-type(6) { animation-delay: 1.8s; }
+            .hero-logo line:nth-of-type(7) { animation-delay: 1.9s; }
+            .hero-logo line:nth-of-type(8) { animation-delay: 2.0s; }
+        }
+
+        .flow-steps {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .flow-step {
+            display: grid;
+            grid-template-columns: 7.8ch minmax(0, 1fr);
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.68rem 0.9rem;
+            border-radius: var(--radius-sm);
+            background: var(--bg-surface);
+            border: 1px solid var(--border-hairline);
+        }
+
+        .flow-step--accent {
+            background: var(--bg-warm);
+            border-color: var(--border-warm);
+        }
+
+        .flow-step-id {
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            color: var(--accent-text);
+            white-space: nowrap;
+        }
+
+        .flow-step-title {
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: var(--ink-primary);
+        }
+
+        /* Section Index Label */
+        .section-index {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--accent-text);
+        }
+
+        /* Why Now Editorial Manifesto */
+        .editorial-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-lg);
+            padding: clamp(1.75rem, 4vw, 3.25rem);
+            box-shadow: var(--shadow-sm);
+            display: grid;
+            grid-template-columns: minmax(0, 0.36fr) minmax(0, 0.64fr);
+            gap: clamp(1.5rem, 4vw, 3.25rem);
+            align-items: start;
+        }
+
+        .editorial-rail {
+            display: flex;
+            flex-direction: column;
+            gap: 1.15rem;
+        }
+
+        .editorial-pullquote {
+            padding-inline-start: 1rem;
+            border-inline-start: 3px solid var(--accent-ember);
+            font-family: var(--font-display);
+            font-size: clamp(1.05rem, 0.98rem + 0.35vw, 1.25rem);
+            font-weight: 700;
+            line-height: 1.4;
+            color: var(--ink-primary);
+        }
+
+        .editorial-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.15rem;
+        }
+
+        .editorial-headline {
+            font-family: var(--font-display);
+            font-size: clamp(1.35rem, 1.1rem + 1vw, 1.9rem);
+            font-weight: 800;
+            line-height: 1.28;
+            letter-spacing: -0.025em;
+            color: var(--ink-primary);
+            text-wrap: balance;
+        }
+
+        .editorial-body {
+            font-size: clamp(0.98rem, 0.94rem + 0.18vw, 1.075rem);
+            line-height: 1.72;
+            color: var(--ink-secondary);
+            text-wrap: pretty;
+        }
+
+        .editorial-body strong {
+            color: var(--ink-primary);
+            font-weight: 700;
+        }
+
+        /* Dual Engine Section */
+        .engine-header {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.65rem;
+            margin-block-end: clamp(1.75rem, 3.5vw, 2.5rem);
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(1.6rem, 1.25rem + 1.35vw, 2.35rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.18;
+            color: var(--ink-primary);
+            text-wrap: balance;
+        }
+
+        .engine-subtitle {
+            font-size: clamp(1rem, 0.95rem + 0.28vw, 1.15rem);
+            line-height: 1.6;
+            color: var(--ink-secondary);
+            max-inline-size: 52ch;
+            margin-inline: auto;
+            text-wrap: balance;
+        }
+
+        .engine-subtitle strong {
+            color: var(--ink-primary);
+            font-weight: 700;
+        }
+
+        .engine-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-template-rows: auto auto 1fr auto;
+            gap: clamp(1.25rem, 2.5vw, 1.75rem);
+        }
+
+        .engine-card {
+            grid-row: span 4;
+            display: grid;
+            grid-template-rows: auto auto 1fr auto;
+            grid-template-rows: subgrid;
+            gap: 0.9rem;
+            background: var(--bg-surface);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-lg);
+            padding: clamp(1.5rem, 3vw, 2.25rem);
+            box-shadow: var(--shadow-sm);
+            position: relative;
+            overflow: clip;
+            transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+        }
+
+        .engine-card::before {
+            content: '';
+            position: absolute;
+            inset-block-start: 0;
+            inset-inline: 0;
+            block-size: 3px;
+            background: linear-gradient(90deg, var(--accent-ember), var(--accent-amber));
+        }
+
+        .engine-card:hover {
+            border-color: var(--border-warm);
+            box-shadow: var(--shadow-md);
+        }
+
+        @media (prefers-reduced-motion: no-preference) {
+            .engine-card:hover {
+                transform: translateY(-2px);
+            }
+        }
+
+        .engine-card-header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+        }
+
+        .engine-badge-group {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+        }
+
+        .engine-icon-box {
+            display: grid;
+            place-items: center;
+            inline-size: 36px;
+            block-size: 36px;
+            border-radius: 10px;
+            background: var(--bg-warm);
+            border: 1px solid var(--border-warm);
+            color: var(--accent-text);
+            flex-shrink: 0;
+        }
+
+        .engine-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.34rem 0.78rem;
+            border-radius: 8px;
+            background: linear-gradient(135deg, var(--accent-fill-start), var(--accent-fill-end));
+            color: #ffffff;
+            font-family: var(--font-display);
+            font-size: 0.8rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+        }
+
+        .engine-role {
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--ink-muted);
+        }
+
+        .feature-title {
+            font-family: var(--font-display);
+            font-size: clamp(1.2rem, 1.05rem + 0.5vw, 1.45rem);
+            font-weight: 700;
+            line-height: 1.32;
+            letter-spacing: -0.02em;
+            color: var(--ink-primary);
+            text-wrap: balance;
+        }
+
+        .feature-description {
+            font-size: 0.98rem;
+            line-height: 1.65;
+            color: var(--ink-secondary);
+        }
+
+        .engine-card-footer {
+            padding-block-start: 0.95rem;
+            border-block-start: 1px solid var(--border-hairline);
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--accent-text);
+        }
+
+        /* Smith-Pincette Preview Models Showcase */
+        .models-showcase-card {
+            container: models / inline-size;
+            background: linear-gradient(180deg, #ffffff 0%, var(--bg-warm) 100%);
+            border: 1px solid var(--border-warm);
+            border-radius: var(--radius-lg);
+            padding: clamp(1.5rem, 3.5vw, 2.5rem);
+            box-shadow: var(--shadow-md);
+            display: flex;
+            flex-direction: column;
+            gap: clamp(1.25rem, 2.5vw, 1.85rem);
+        }
+
+        .models-header-top {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem 1rem;
+            padding-block-end: 1.1rem;
+            border-block-end: 1px solid rgba(234, 88, 12, 0.16);
+        }
+
+        .models-badges {
+            display: inline-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.7rem;
+        }
+
+        .models-eyebrow {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--accent-text);
+        }
+
+        .spec-pills {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.45rem;
+        }
+
+        .spec-pill {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.28rem 0.7rem;
+            border-radius: 999px;
+            background: var(--bg-surface);
+            border: 1px solid var(--border-warm);
+            color: var(--ink-secondary);
+            font-family: var(--font-mono);
+            font-size: 0.74rem;
+            font-weight: 500;
+        }
+
+        .models-intro-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: clamp(1.25rem, 3vw, 2rem);
+            align-items: start;
+        }
+
+        .models-copy {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .models-title {
+            font-family: var(--font-display);
+            font-size: clamp(1.5rem, 1.25rem + 0.9vw, 2.05rem);
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            line-height: 1.2;
+            color: var(--ink-primary);
+        }
+
+        .models-description {
+            font-size: 0.98rem;
+            line-height: 1.68;
+            color: var(--ink-secondary);
+            max-inline-size: 62ch;
+            text-wrap: pretty;
+        }
+
+        /* Interactive Local ONNX Preview Widget */
+        .onnx-preview-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-md);
+            padding: 1.05rem 1.15rem;
+            box-shadow: var(--shadow-xs);
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+        }
+
+        .preview-bar {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.6rem;
+        }
+
+        .preview-label {
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--ink-muted);
+        }
+
+        .preview-mode-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.42rem;
+            padding: 0.3rem 0.72rem;
+            border-radius: 999px;
+            background: linear-gradient(135deg, var(--accent-fill-start), var(--accent-fill-end));
+            border: 1px solid transparent;
+            color: #ffffff;
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+        }
+
+        .preview-mode-pill[data-mode="raw"] {
+            background: #fef3c7;
+            border-color: rgba(180, 83, 9, 0.32);
+            color: #78350f;
+        }
+
+        .preview-mode-dot {
+            inline-size: 6px;
+            block-size: 6px;
+            border-radius: 50%;
+            background: currentColor;
+            flex-shrink: 0;
+        }
+
+        .preview-body {
+            min-block-size: 8.6rem;
+            display: flex;
+            align-items: center;
+            padding: 0.85rem 0.95rem;
+            border-radius: var(--radius-sm);
+            background: #faf9f6;
+            border: 1px solid var(--border-hairline);
+            font-family: var(--font-mono);
+            font-size: 0.82rem;
+            line-height: 1.75;
+            color: var(--ink-primary);
+            overflow-wrap: anywhere;
+        }
+
+        .preview-text {
+            inline-size: 100%;
+        }
+
+        .pii-span {
+            display: inline-block;
+            padding: 0.06rem 0.35rem;
+            border-radius: 6px;
+            font-weight: 600;
+            background: var(--bg-warm-strong);
+            color: var(--accent-text-strong);
+            border: 1px solid rgba(194, 65, 12, 0.26);
+            transition:
+                opacity 0.24s ease,
+                transform 0.24s ease,
+                background-color 0.28s ease,
+                color 0.28s ease,
+                border-color 0.28s ease;
+        }
+
+        .pii-span[data-span-mode="raw"] {
+            background: #fef3c7;
+            color: #78350f;
+            border-color: rgba(180, 83, 9, 0.3);
+            text-decoration: underline;
+            text-decoration-style: dotted;
+            text-underline-offset: 3px;
+        }
+
+        .pii-span.is-swapping {
+            opacity: 0;
+            transform: translateY(-3px) scale(0.96);
+        }
+
+        .preview-caption {
+            font-size: 0.78rem;
+            line-height: 1.45;
+            color: var(--ink-muted);
+        }
+
+        /* Model & Quickstart Cards */
+        .model-links {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.9rem;
+        }
+
+        .model-links > li {
+            display: flex;
+        }
+
+        .model-link-card {
+            display: grid;
+            grid-template-rows: auto auto 1fr;
+            gap: 0.5rem;
+            inline-size: 100%;
+            min-block-size: 44px;
+            padding: 1.15rem 1.2rem;
+            border-radius: var(--radius-md);
+            background: var(--bg-surface);
+            border: 1px solid var(--border-hairline);
+            text-decoration: none;
+            color: var(--ink-primary);
+            box-shadow: var(--shadow-xs);
+            transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .model-link-card:hover {
+            border-color: var(--border-warm-strong);
+            box-shadow: var(--shadow-warm);
+        }
+
+        @media (prefers-reduced-motion: no-preference) {
+            .model-link-card:hover {
+                transform: translateY(-2px);
+            }
+        }
+
+        .model-link-top {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem;
+        }
+
+        .model-platform {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-family: var(--font-mono);
+            font-size: 0.74rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--accent-text);
+        }
+
+        .platform-icon {
+            flex-shrink: 0;
+        }
+
+        .model-link-top-end {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            flex-shrink: 0;
+            margin-inline-start: auto;
+        }
+
+        .quickstart-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.22rem 0.58rem;
+            border-radius: 999px;
+            background: linear-gradient(135deg, var(--accent-fill-start), var(--accent-fill-end));
+            color: #ffffff;
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+
+        .model-link-arrow {
+            color: var(--ink-muted);
+            flex-shrink: 0;
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+
+        .model-link-card:hover .model-link-arrow,
+        .model-link-card:focus-visible .model-link-arrow {
+            color: var(--accent-text);
+        }
+
+        @media (prefers-reduced-motion: no-preference) {
+            .model-link-card:hover .model-link-arrow,
+            .model-link-card:focus-visible .model-link-arrow {
+                transform: translate(2px, -2px);
+            }
+        }
+
+        .model-link-name {
+            font-family: var(--font-display);
+            font-size: 1.05rem;
+            font-weight: 700;
+            line-height: 1.3;
+            color: var(--ink-primary);
+        }
+
+        .model-link-meta {
+            font-size: 0.875rem;
+            line-height: 1.5;
+            color: var(--ink-secondary);
+        }
+
+        .model-link-card--quickstart {
+            background: linear-gradient(145deg, #fffdf9 0%, #fff3e4 100%);
+            border-color: var(--border-warm-strong);
+            box-shadow: 0 6px 20px rgba(234, 88, 12, 0.12);
+        }
+
+        .model-link-card--quickstart:hover {
+            border-color: var(--accent-ember);
+            box-shadow: 0 14px 30px rgba(234, 88, 12, 0.2);
+        }
+
+        .model-link-card--quickstart .model-link-arrow {
+            color: var(--accent-text);
+        }
+
+        @container models (inline-size >= 740px) {
+            .models-intro-grid {
+                grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+            }
+
+            .model-links {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                grid-template-rows: auto auto 1fr;
+            }
+
+            .model-links > li {
+                grid-row: span 3;
+                display: grid;
+                grid-template-rows: auto auto 1fr;
+                grid-template-rows: subgrid;
+            }
+
+            .model-link-card {
+                grid-row: span 3;
+                grid-template-rows: auto auto 1fr;
+                grid-template-rows: subgrid;
+            }
+        }
+
+        @container models (inline-size >= 520px) and (inline-size < 740px) {
+            .model-links {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .model-links > li:last-child {
+                grid-column: 1 / -1;
+            }
+        }
+
+        @container models (inline-size < 520px) {
+            .preview-body {
+                min-block-size: 11.5rem;
+            }
+        }
+
+        /* Vision & Stealth Callout */
+        .vision-banner {
+            background:
+                radial-gradient(80% 90% at 50% 0%, rgba(255, 152, 0, 0.12) 0%, transparent 70%),
+                linear-gradient(180deg, #ffffff 0%, var(--bg-warm) 100%);
+            border: 1px solid var(--border-warm);
+            border-radius: var(--radius-lg);
+            padding: clamp(2rem, 5vw, 3.75rem) clamp(1.25rem, 4vw, 3rem);
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.25rem;
+        }
+
+        .vision-quote {
+            font-size: clamp(0.98rem, 0.92rem + 0.25vw, 1.1rem);
+            line-height: 1.68;
+            color: var(--ink-secondary);
+            font-style: italic;
+            max-inline-size: 62ch;
+            text-wrap: pretty;
+        }
+
+        .divider-mark {
+            inline-size: 44px;
+            block-size: 44px;
+            opacity: 0.92;
+        }
+
+        .stealth-title {
+            font-family: var(--font-display);
+            font-size: clamp(1.55rem, 1.25rem + 1.3vw, 2.25rem);
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            line-height: 1.2;
+            color: var(--ink-primary);
+            text-wrap: balance;
+        }
+
+        .stealth-desc {
+            font-size: clamp(0.98rem, 0.94rem + 0.2vw, 1.08rem);
+            line-height: 1.65;
+            color: var(--ink-secondary);
+            max-inline-size: 52ch;
+            text-wrap: pretty;
+        }
+
+        .stealth-actions {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem 1.25rem;
+            margin-block-start: 0.35rem;
+        }
+
+        .direct-email-link {
+            display: inline-flex;
+            align-items: center;
+            min-block-size: 44px;
+            padding-inline: 0.5rem;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--accent-text);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        .direct-email-link:hover {
+            color: var(--accent-text-strong);
+        }
+
+        /* Footer */
+        .site-footer {
+            border-block-start: 1px solid var(--border-hairline);
+            padding-block: 2rem 2.75rem;
+        }
+
+        .footer-inner {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem 1.5rem;
+            font-size: 0.875rem;
+            color: var(--ink-muted);
+        }
+
+        .footer-brand {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .footer-origin {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.45rem;
+        }
+
+        .footer-flags {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-size: 1.05rem;
+        }
+
+        .back-to-top {
+            display: inline-flex;
+            align-items: center;
+            min-block-size: 44px;
+            padding-inline: 0.85rem;
+            border-radius: 999px;
+            border: 1px solid var(--border-hairline);
+            background: var(--bg-surface);
+            color: var(--ink-secondary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: border-color 0.2s ease, color 0.2s ease;
+        }
+
+        .back-to-top:hover {
+            border-color: var(--border-warm-strong);
+            color: var(--ink-primary);
+        }
+
+        /* Progressive Scroll-Driven Section Reveals (Zero impact when unsupported or reduced motion) */
+        @media (prefers-reduced-motion: no-preference) {
+            @supports ((animation-timeline: view()) and (animation-range: entry)) {
+                @keyframes section-enter {
+                    from {
+                        opacity: 0.96;
+                        transform: translateY(14px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+
+                .reveal-on-scroll {
+                    animation: section-enter auto linear both;
+                    animation-timeline: view();
+                    animation-range: entry 0% entry 28%;
+                }
+            }
+        }
+
+        /* Responsive Layout Adjustments */
+        @media (max-width: 920px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .editorial-card {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .engine-grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+
+            .engine-card {
+                grid-row: auto;
+                grid-template-rows: auto auto 1fr auto;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .header-inner {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .hero-actions,
+            .stealth-actions {
+                inline-size: 100%;
+            }
+
+            .hero-actions .btn,
+            .stealth-actions .btn {
+                inline-size: 100%;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        /* Windows High Contrast / Forced Colors Support */
+        @media (forced-colors: active) {
+            .logo-text,
+            .slogan-accent {
+                -webkit-text-fill-color: unset;
+                background: none;
+                color: CanvasText;
+            }
+
+            .btn-primary,
+            .engine-badge,
+            .quickstart-badge,
+            .preview-mode-pill {
+                background: ButtonFace;
+                color: ButtonText;
+                border: 2px solid ButtonText;
+            }
+
+            .b2a-card,
+            .editorial-card,
+            .engine-card,
+            .models-showcase-card,
+            .model-link-card,
+            .onnx-preview-card,
+            .vision-banner,
+            .stealth-pill,
+            .spec-pill {
+                border: 1px solid CanvasText;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="https://holocortex.ai" class="logo" aria-label="HoloCortex.AI Home">
+                <svg class="logo-svg" width="36" height="36" viewBox="0 0 60 60" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="grad-header-logo" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#ff5722;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#ff9800;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="30" cy="30" r="4" fill="url(#grad-header-logo)"/>
+                    <circle cx="20" cy="20" r="3" fill="url(#grad-header-logo)" opacity="0.85"/>
+                    <circle cx="40" cy="20" r="3" fill="url(#grad-header-logo)" opacity="0.85"/>
+                    <circle cx="20" cy="40" r="3" fill="url(#grad-header-logo)" opacity="0.85"/>
+                    <circle cx="40" cy="40" r="3" fill="url(#grad-header-logo)" opacity="0.85"/>
+                    <circle cx="15" cy="30" r="2" fill="url(#grad-header-logo)" opacity="0.65"/>
+                    <circle cx="45" cy="30" r="2" fill="url(#grad-header-logo)" opacity="0.65"/>
+                    <circle cx="30" cy="15" r="2" fill="url(#grad-header-logo)" opacity="0.65"/>
+                    <circle cx="30" cy="45" r="2" fill="url(#grad-header-logo)" opacity="0.65"/>
+                    <circle cx="25" cy="25" r="1.5" fill="url(#grad-header-logo)" opacity="0.45"/>
+                    <circle cx="35" cy="25" r="1.5" fill="url(#grad-header-logo)" opacity="0.45"/>
+                    <circle cx="25" cy="35" r="1.5" fill="url(#grad-header-logo)" opacity="0.45"/>
+                    <circle cx="35" cy="35" r="1.5" fill="url(#grad-header-logo)" opacity="0.45"/>
+                    <line x1="30" y1="30" x2="20" y2="20" stroke="url(#grad-header-logo)" stroke-width="1.2" opacity="0.6"/>
+                    <line x1="30" y1="30" x2="40" y2="20" stroke="url(#grad-header-logo)" stroke-width="1.2" opacity="0.6"/>
+                    <line x1="30" y1="30" x2="20" y2="40" stroke="url(#grad-header-logo)" stroke-width="1.2" opacity="0.6"/>
+                    <line x1="30" y1="30" x2="40" y2="40" stroke="url(#grad-header-logo)" stroke-width="1.2" opacity="0.6"/>
+                    <line x1="30" y1="30" x2="15" y2="30" stroke="url(#grad-header-logo)" stroke-width="1.2" opacity="0.4"/>
+                    <line x1="30" y1="30" x2="45" y2="30" stroke="url(#grad-header-logo)" stroke-width="1.2" opacity="0.4"/>
+                    <line x1="30" y1="30" x2="30" y2="15" stroke="url(#grad-header-logo)" stroke-width="1.2" opacity="0.4"/>
+                    <line x1="30" y1="30" x2="30" y2="45" stroke="url(#grad-header-logo)" stroke-width="1.2" opacity="0.4"/>
+                </svg>
+                <span class="logo-text">HoloCortex.AI</span>
+            </a>
+
+            <div class="stealth-pill">
+                <span class="stealth-dot" aria-hidden="true"></span>
+                <span>Stealth Mode &middot; Researching &amp; Cooking</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero hero-backdrop">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">Europe&rsquo;s First B2A (Business-to-Agent) Powerhouse</span>
+
+                    <h1 id="main-content" class="hero-title">
+                        The Specialist Your <span class="slogan-accent">Agent Calls.</span>
+                    </h1>
+
+                    <p class="hero-lead">
+                        Powering the Agentic Economy.<br>
+                        Protecting the Enterprise.
+                    </p>
+
+                    <p class="hero-subtitle">
+                        Leading Europe into the agentic economy by building the specialists that agents call, and the trust layer that humans demand.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#smith-pincette">
+                            Explore Smith-Pincette
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M5 12h14" />
+                                <path d="m12 5 7 7-7 7" />
+                            </svg>
+                        </a>
+                        <button type="button" class="btn btn-secondary" data-contact-trigger>Get in Touch</button>
+                    </div>
+                </div>
+
+                <aside class="b2a-card" aria-label="HoloCortex B2A Architecture">
+                    <div class="b2a-card-top">
+                        <span class="b2a-status-chip">
+                            <span class="stealth-dot" aria-hidden="true"></span>
+                            B2A Runtime // Sovereign Layer
+                        </span>
+                        <span>Berlin &middot; EU</span>
+                    </div>
+
+                    <div class="emblem-stage">
+                        <div class="emblem-ring">
+                            <div class="hero-logo-spin">
+                                <svg class="hero-logo" viewBox="0 0 60 60" aria-hidden="true">
+                                <defs>
+                                    <linearGradient id="grad-hero-emblem" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#ff5722;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#ff9800;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="30" cy="30" r="4" fill="url(#grad-hero-emblem)"/>
+                                <circle cx="20" cy="20" r="3" fill="url(#grad-hero-emblem)" opacity="0.9"/>
+                                <circle cx="40" cy="20" r="3" fill="url(#grad-hero-emblem)" opacity="0.9"/>
+                                <circle cx="20" cy="40" r="3" fill="url(#grad-hero-emblem)" opacity="0.9"/>
+                                <circle cx="40" cy="40" r="3" fill="url(#grad-hero-emblem)" opacity="0.9"/>
+                                <circle cx="15" cy="30" r="2" fill="url(#grad-hero-emblem)" opacity="0.8"/>
+                                <circle cx="45" cy="30" r="2" fill="url(#grad-hero-emblem)" opacity="0.8"/>
+                                <circle cx="30" cy="15" r="2" fill="url(#grad-hero-emblem)" opacity="0.8"/>
+                                <circle cx="30" cy="45" r="2" fill="url(#grad-hero-emblem)" opacity="0.8"/>
+                                <circle cx="25" cy="25" r="1.5" fill="url(#grad-hero-emblem)" opacity="0.7"/>
+                                <circle cx="35" cy="25" r="1.5" fill="url(#grad-hero-emblem)" opacity="0.7"/>
+                                <circle cx="25" cy="35" r="1.5" fill="url(#grad-hero-emblem)" opacity="0.7"/>
+                                <circle cx="35" cy="35" r="1.5" fill="url(#grad-hero-emblem)" opacity="0.7"/>
+                                <line x1="30" y1="30" x2="20" y2="20" stroke="url(#grad-hero-emblem)" stroke-width="1.5" opacity="0.8"/>
+                                <line x1="30" y1="30" x2="40" y2="20" stroke="url(#grad-hero-emblem)" stroke-width="1.5" opacity="0.8"/>
+                                <line x1="30" y1="30" x2="20" y2="40" stroke="url(#grad-hero-emblem)" stroke-width="1.5" opacity="0.8"/>
+                                <line x1="30" y1="30" x2="40" y2="40" stroke="url(#grad-hero-emblem)" stroke-width="1.5" opacity="0.8"/>
+                                <line x1="30" y1="30" x2="15" y2="30" stroke="url(#grad-hero-emblem)" stroke-width="1.5" opacity="0.6"/>
+                                <line x1="30" y1="30" x2="45" y2="30" stroke="url(#grad-hero-emblem)" stroke-width="1.5" opacity="0.6"/>
+                                <line x1="30" y1="30" x2="30" y2="15" stroke="url(#grad-hero-emblem)" stroke-width="1.5" opacity="0.6"/>
+                                <line x1="30" y1="30" x2="30" y2="45" stroke="url(#grad-hero-emblem)" stroke-width="1.5" opacity="0.6"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ol class="flow-steps" role="list">
+                        <li class="flow-step">
+                            <span class="flow-step-id">01 &middot; CALL</span>
+                            <span class="flow-step-title">Agent Call</span>
+                        </li>
+                        <li class="flow-step flow-step--accent">
+                            <span class="flow-step-id">02 &middot; CORTEX</span>
+                            <span class="flow-step-title">Sovereign Trust &amp; Routing</span>
+                        </li>
+                        <li class="flow-step">
+                            <span class="flow-step-id">03 &middot; HOLO</span>
+                            <span class="flow-step-title">Domain Specialist</span>
+                        </li>
+                    </ol>
+                </aside>
+            </div>
+        </section>
+
+        <section id="why-now" class="container reveal-on-scroll">
+            <div class="editorial-card">
+                <div class="editorial-rail">
+                    <span class="section-index">01 / Why Now</span>
+                    <blockquote class="editorial-pullquote">
+                        &ldquo;What won&rsquo;t commoditize is trust and taste.&rdquo;
+                    </blockquote>
+                </div>
+                <div class="editorial-content">
+                    <h2 class="editorial-headline">
+                        For forty years, enterprise software was built for human eyes and mouse clicks. In the agentic economy, agents are the new users.
+                    </h2>
+                    <p class="editorial-body">
+                        Models will get cheaper, and harnesses will get replaced. <strong>What won&rsquo;t commoditize is trust and taste.</strong> When every company has access to the same baseline AI, the winners will be those who can safely and trustfully run autonomous agents on their deepest proprietary data, route every task to the optimal price-per-value point, and deploy specialized domain agents that actually know your goals, calculate deterministically, and protect a brand.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="dual-engine" class="container reveal-on-scroll">
+            <div class="engine-header">
+                <span class="section-index">02 / Architecture</span>
+                <h2 class="section-title">The Dual Engine of HoloCortex</h2>
+                <p class="engine-subtitle">
+                    Use <strong>Cortex</strong> to make AI safe and affordable. Use <strong>Holo</strong> to make it brilliant at your domain.
+                </p>
+            </div>
+
+            <div class="engine-grid">
+                <article class="engine-card">
+                    <header class="engine-card-header">
+                        <div class="engine-badge-group">
+                            <span class="engine-icon-box" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                                    <polyline points="2 17 12 22 22 17" />
+                                    <polyline points="2 12 12 17 22 12" />
+                                </svg>
+                            </span>
+                            <span class="engine-badge">HOLO</span>
+                        </div>
+                        <span class="engine-role">Domain Specialists</span>
+                    </header>
+                    <h3 class="feature-title">High-Taste Niche Intelligence, Priced for Production.</h3>
+                    <p class="feature-description">
+                        Specialized domain specialists built to be called by autonomous agents—executing critical industrial, engineering, and corporate workflows with deterministic precision.
+                    </p>
+                    <footer class="engine-card-footer">Domain Brilliance &middot; Deterministic Execution</footer>
+                </article>
+
+                <article class="engine-card">
+                    <header class="engine-card-header">
+                        <div class="engine-badge-group">
+                            <span class="engine-icon-box" aria-hidden="true">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                            </span>
+                            <span class="engine-badge">CORTEX</span>
+                        </div>
+                        <span class="engine-role">Trust &amp; Routing</span>
+                    </header>
+                    <h3 class="feature-title">Route by Eval. Scale by Cloud. Trust by Design.</h3>
+                    <p class="feature-description">
+                        The sovereign trust and routing layer that connects agents to your deepest proprietary knowledge in the cloud without ever compromising sovereignty or security.
+                    </p>
+                    <footer class="engine-card-footer">Stop Paying Frontier Prices for Commodity Tasks.</footer>
+                </article>
+            </div>
+        </section>
+
+        <section id="smith-pincette" class="container reveal-on-scroll">
+            <article class="models-showcase-card" aria-labelledby="smith-pincette-heading">
+                <header class="models-header-top">
+                    <div class="models-badges">
+                        <span class="engine-badge">CORTEX</span>
+                        <span class="models-eyebrow">Preview Models</span>
+                    </div>
+                    <ul class="spec-pills" role="list">
+                        <li class="spec-pill">Open Preview</li>
+                        <li class="spec-pill">Local ONNX</li>
+                        <li class="spec-pill">Apache-2.0</li>
+                    </ul>
+                </header>
+
+                <div class="models-intro-grid">
+                    <div class="models-copy">
+                        <h3 id="smith-pincette-heading" class="models-title">Smith-Pincette</h3>
+                        <p class="models-description">
+                            Named after precision tweezers (<em>Pincette</em>), our first open-weight Cortex models pull valuable and sensitive information out of text with exact span precision&mdash;running fully locally via ONNX so agents can detect and mask personal data before anything leaves your environment.
+                        </p>
+                    </div>
+
+                    <div class="onnx-preview-card" id="onnx-preview-card">
+                        <div class="preview-bar">
+                            <span class="preview-label">Local ONNX Preview</span>
+                            <span class="preview-mode-pill" id="preview-mode-pill" data-mode="masked">
+                                <span class="preview-mode-dot" aria-hidden="true"></span>
+                                <span id="preview-mode-text">Masked &middot; Safe for cloud</span>
+                            </span>
+                        </div>
+                        <div class="preview-body" id="preview-body" data-mode="masked">
+                            <p class="preview-text">
+                                Dispatch vendor settlement for
+                                <mark class="pii-span" data-span-mode="masked" data-masked="[PERSON_1]" data-raw="Elena Richter">[PERSON_1]</mark>
+                                (<mark class="pii-span" data-span-mode="masked" data-masked="[EMAIL_1]" data-raw="elena.richter@nordwerk.de">[EMAIL_1]</mark>)
+                                via IBAN
+                                <mark class="pii-span" data-span-mode="masked" data-masked="[IBAN_1]" data-raw="DE89 3704 0044 0532 0130 00">[IBAN_1]</mark>
+                                from
+                                <mark class="pii-span" data-span-mode="masked" data-masked="[LOCATION_1]" data-raw="Berlin">[LOCATION_1]</mark>.
+                            </p>
+                        </div>
+                        <p class="preview-caption">
+                            Illustrative preview &middot; 43 entity classes detected locally before cloud routing
+                        </p>
+                    </div>
+                </div>
+
+                <ul class="model-links" role="list">
+                    <li>
+                        <a class="model-link-card" href="https://huggingface.co/Holocortex/Smith-Pincette-Nitro" target="_blank" rel="noopener noreferrer">
+                            <span class="model-link-top">
+                                <span class="model-platform">
+                                    <svg class="platform-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                        <polyline points="3.29 7 12 12 20.71 7" />
+                                        <line x1="12" y1="22" x2="12" y2="12" />
+                                    </svg>
+                                    Hugging Face
+                                </span>
+                                <span class="model-link-top-end">
+                                    <svg class="model-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M7 17L17 7" />
+                                        <path d="M7 7h10v10" />
+                                    </svg>
+                                </span>
+                            </span>
+                            <span class="model-link-name">Smith-Pincette-Nitro</span>
+                            <span class="model-link-meta">146.7M &middot; Fast tier built for CPU &amp; high-volume text</span>
+                            <span class="visually-hidden"> (opens in a new tab)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="model-link-card" href="https://huggingface.co/Holocortex/Smith-Pincette-Sprint" target="_blank" rel="noopener noreferrer">
+                            <span class="model-link-top">
+                                <span class="model-platform">
+                                    <svg class="platform-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                        <polyline points="3.29 7 12 12 20.71 7" />
+                                        <line x1="12" y1="22" x2="12" y2="12" />
+                                    </svg>
+                                    Hugging Face
+                                </span>
+                                <span class="model-link-top-end">
+                                    <svg class="model-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M7 17L17 7" />
+                                        <path d="M7 7h10v10" />
+                                    </svg>
+                                </span>
+                            </span>
+                            <span class="model-link-name">Smith-Pincette-Sprint</span>
+                            <span class="model-link-meta">321.9M &middot; Wider multilingual encoder across 43 classes</span>
+                            <span class="visually-hidden"> (opens in a new tab)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="model-link-card model-link-card--quickstart" href="https://github.com/holocortex/Smith-Pincette-Models" target="_blank" rel="noopener noreferrer">
+                            <span class="model-link-top">
+                                <span class="model-platform">
+                                    <svg class="platform-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                        <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                                    </svg>
+                                    GitHub
+                                </span>
+                                <span class="model-link-top-end">
+                                    <span class="quickstart-badge">Quickstart</span>
+                                    <svg class="model-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M7 17L17 7" />
+                                        <path d="M7 7h10v10" />
+                                    </svg>
+                                </span>
+                            </span>
+                            <span class="model-link-name">Smith-Pincette-Models</span>
+                            <span class="model-link-meta">Start here &middot; Python SDK, CLI masking &amp; local MCP server</span>
+                            <span class="visually-hidden"> (opens in a new tab)</span>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="contact" class="container reveal-on-scroll">
+            <div class="vision-banner">
+                <blockquote class="vision-quote">
+                    &ldquo;Our Vision: A sovereign European economy where autonomous agents execute critical industrial, engineering, and corporate workflows in the cloud without compromising proprietary knowledge.&rdquo;
+                </blockquote>
+
+                <svg class="divider-mark" width="44" height="44" viewBox="0 0 60 60" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="grad-divider-mark" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#ff5722;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#ff9800;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="30" cy="30" r="4" fill="url(#grad-divider-mark)"/>
+                    <circle cx="20" cy="20" r="3" fill="url(#grad-divider-mark)" opacity="0.85"/>
+                    <circle cx="40" cy="20" r="3" fill="url(#grad-divider-mark)" opacity="0.85"/>
+                    <circle cx="20" cy="40" r="3" fill="url(#grad-divider-mark)" opacity="0.85"/>
+                    <circle cx="40" cy="40" r="3" fill="url(#grad-divider-mark)" opacity="0.85"/>
+                    <circle cx="15" cy="30" r="2" fill="url(#grad-divider-mark)" opacity="0.65"/>
+                    <circle cx="45" cy="30" r="2" fill="url(#grad-divider-mark)" opacity="0.65"/>
+                    <circle cx="30" cy="15" r="2" fill="url(#grad-divider-mark)" opacity="0.65"/>
+                    <circle cx="30" cy="45" r="2" fill="url(#grad-divider-mark)" opacity="0.65"/>
+                    <circle cx="25" cy="25" r="1.5" fill="url(#grad-divider-mark)" opacity="0.45"/>
+                    <circle cx="35" cy="25" r="1.5" fill="url(#grad-divider-mark)" opacity="0.45"/>
+                    <circle cx="25" cy="35" r="1.5" fill="url(#grad-divider-mark)" opacity="0.45"/>
+                    <circle cx="35" cy="35" r="1.5" fill="url(#grad-divider-mark)" opacity="0.45"/>
+                    <line x1="30" y1="30" x2="20" y2="20" stroke="url(#grad-divider-mark)" stroke-width="1.2" opacity="0.6"/>
+                    <line x1="30" y1="30" x2="40" y2="20" stroke="url(#grad-divider-mark)" stroke-width="1.2" opacity="0.6"/>
+                    <line x1="30" y1="30" x2="20" y2="40" stroke="url(#grad-divider-mark)" stroke-width="1.2" opacity="0.6"/>
+                    <line x1="30" y1="30" x2="40" y2="40" stroke="url(#grad-divider-mark)" stroke-width="1.2" opacity="0.6"/>
+                    <line x1="30" y1="30" x2="15" y2="30" stroke="url(#grad-divider-mark)" stroke-width="1.2" opacity="0.4"/>
+                    <line x1="30" y1="30" x2="45" y2="30" stroke="url(#grad-divider-mark)" stroke-width="1.2" opacity="0.4"/>
+                    <line x1="30" y1="30" x2="30" y2="15" stroke="url(#grad-divider-mark)" stroke-width="1.2" opacity="0.4"/>
+                    <line x1="30" y1="30" x2="30" y2="45" stroke="url(#grad-divider-mark)" stroke-width="1.2" opacity="0.4"/>
+                </svg>
+
+                <h2 class="stealth-title">Researching &amp; Cooking in Stealth Mode</h2>
+                <p class="stealth-desc">
+                    We are keeping the details under wraps while we build and validate our core technology in Berlin. Want to connect before we emerge?
+                </p>
+
+                <div class="stealth-actions">
+                    <button type="button" class="btn btn-primary" data-contact-trigger aria-label="Get in touch with HoloCortex.AI">
+                        Get in Touch
+                    </button>
+                    <a class="direct-email-link" href="mailto:contact@holocortex.ai">contact@holocortex.ai</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <p>&copy; 2026 HoloCortex.AI - Revolutionizing Organizational Intelligence</p>
+                <div class="footer-origin">
+                    <span>Made with ❤️ in Berlin, Germany</span>
+                    <span class="footer-flags">
+                        <span role="img" aria-label="Germany flag">🇩🇪</span>
+                        <span role="img" aria-label="European Union flag">🇪🇺</span>
+                    </span>
+                </div>
+            </div>
+
+            <a class="back-to-top" href="#top">Back to top &uarr;</a>
+        </div>
+    </footer>
+
+    <script>
+        function notifyMe() {
+            const subject = encodeURIComponent('Connecting with HoloCortex.AI');
+            const body = encodeURIComponent(`Hello HoloCortex.AI team,
+
+I came across your stealth page and would love to connect and learn more when you are ready to share.
+
+Best regards`);
+            window.location.href = `mailto:contact@holocortex.ai?subject=${subject}&body=${body}`;
+        }
+
+        document.querySelectorAll('[data-contact-trigger]').forEach((trigger) => {
+            trigger.addEventListener('click', notifyMe);
+        });
+
+        const previewCard = document.getElementById('onnx-preview-card');
+        const previewBody = document.getElementById('preview-body');
+        const previewModePill = document.getElementById('preview-mode-pill');
+        const previewModeText = document.getElementById('preview-mode-text');
+        const piiSpans = previewBody ? Array.from(previewBody.querySelectorAll('.pii-span')) : [];
+
+        if (previewCard && previewBody && piiSpans.length > 0 && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+            let currentMode = 'masked';
+            let paused = false;
+            let cycleTimer = null;
+
+            const scheduleNext = (delay) => {
+                clearTimeout(cycleTimer);
+                if (!paused && !document.hidden) {
+                    cycleTimer = setTimeout(runTransition, delay);
+                }
+            };
+
+            const swapSpan = (span, targetMode) => {
+                span.classList.add('is-swapping');
+                setTimeout(() => {
+                    span.textContent = targetMode === 'masked' ? span.dataset.masked : span.dataset.raw;
+                    span.dataset.spanMode = targetMode;
+                    requestAnimationFrame(() => {
+                        span.classList.remove('is-swapping');
+                    });
+                }, 220);
+            };
+
+            const runTransition = () => {
+                if (paused || document.hidden) return;
+                const nextMode = currentMode === 'masked' ? 'raw' : 'masked';
+                currentMode = nextMode;
+                previewBody.dataset.mode = nextMode;
+
+                if (previewModePill && previewModeText) {
+                    previewModePill.dataset.mode = nextMode;
+                    previewModeText.textContent = nextMode === 'masked'
+                        ? 'Masked \u00b7 Safe for cloud'
+                        : 'Raw input \u00b7 Local';
+                }
+
+                piiSpans.forEach((span, index) => {
+                    setTimeout(() => swapSpan(span, nextMode), index * 170);
+                });
+
+                const morphDuration = (piiSpans.length - 1) * 170 + 260;
+                const holdDuration = nextMode === 'raw' ? 2600 : 3200;
+                scheduleNext(morphDuration + holdDuration);
+            };
+
+            previewCard.addEventListener('mouseenter', () => {
+                paused = true;
+                clearTimeout(cycleTimer);
+            });
+
+            previewCard.addEventListener('mouseleave', () => {
+                paused = false;
+                scheduleNext(1400);
+            });
+
+            document.addEventListener('visibilitychange', () => {
+                if (document.hidden) {
+                    clearTimeout(cycleTimer);
+                } else if (!paused) {
+                    scheduleNext(1400);
+                }
+            });
+
+            scheduleNext(2200);
+        }
+    </script>
+</body>
+</html>
